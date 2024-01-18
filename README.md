@@ -1,12 +1,20 @@
 Welcome to my Neovim configuration. My goal with this read me is to provide step by step instructions to install this on either MacOS, Windows, or Linux. This is my working Neovim configuration so it will change as my needs for neovim change.
 
-Installation for MacOS:\n
+Installation for MacOS:<br>
 1.) Install Homebrew
-```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-2.) Install Neovim\n
-```brew install neovim```
+2.) Install Neovim<br>
+```
+brew install neovim
+```
 
-3.) Install this branch\n
-```git clone https://github.com/jprugel/neovim ~/.config/nvim```
-```rm -rf ~/.config/nvim/.git```
+3.) Install this branch<br>
+```
+git clone https://github.com/jprugel/neovim ~/.config/nvim
+```
+```
+rm -rf ~/.config/nvim/.git
+```
