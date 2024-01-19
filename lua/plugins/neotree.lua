@@ -8,6 +8,6 @@ return {
   },
   config = function()
     vim.g.neotree_hide_dotfiles = 0
-    vim.keymap.set('n', '<leader>n', ':Neotree<CR>')
-  end
+    vim.keymap.set("n", "<leader>n", ":Neotree<CR>")
+  end,
 }
