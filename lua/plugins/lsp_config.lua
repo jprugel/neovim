@@ -12,7 +12,8 @@ return {
         ensure_installed = {
           "lua_ls",
           "rust_analyzer",
-          "omnisharp_mono",
+          "biome",
+          "zls",
         },
       })
     end,
@@ -24,7 +25,8 @@ return {
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
       lspconfig.rust_analyzer.setup({})
-      lspconfig.omnisharp_mono.setup({})
+      lspconfig.biome.setup({})
+      lspconfig.zls.setup({})
       -- Global mappings.
       -- See `:help vim.diagnostic.*` for documentation on any of the below functions
       vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
@@ -45,6 +47,7 @@ return {
           local opts = { buffer = ev.buf }
           vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
           vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+          vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, opts)
           vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
           vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
           vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
